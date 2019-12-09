@@ -1,7 +1,6 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-
+#include <stdlib.h>  //TIME - COMPLEXITY-O(nm)
+#include <string.h>  // space -O(m).O(|E|)
 #define NO_OF_CHARS 256
 
 int max(int a, int b)

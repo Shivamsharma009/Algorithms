@@ -1,4 +1,4 @@
-#include <stdio.h>
+ #include <stdio.h>
 #include <stdlib.h>
 #define SIZE 8
  
@@ -34,7 +34,7 @@ int solveKT(int x, int y, int moveI, int solution[SIZE][SIZE],
         	if(solveKT(nextX, nextY, moveI+1, solution, xMove, yMove))
         		return 1;
         	else
-        		solution[nextX][nextY] = -1;//backtrack
+        		solution[nextX][nextY] = -1;
        }
    } 
    return 0;

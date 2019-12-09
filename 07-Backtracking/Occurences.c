@@ -1,8 +1,7 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-
-void navieSearch(char *text, char *pattern)
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+void navieSearch(char *text, char *pattern)//Time Complexity O(n^2)
 {
 	int size1 = strlen(text);
 	int size2 = strlen(pattern);

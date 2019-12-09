@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
-#define SIZE 4 
- 
- 
+#define SIZE 4
+
+
 void printSolution(int solution[SIZE][SIZE])
 {
     int i, j;
@@ -13,7 +13,7 @@ void printSolution(int solution[SIZE][SIZE])
         printf("\n");
     }
 }
- 
+
 int isSafe(int maze[SIZE][SIZE], int x, int y)
 {
     return (x >= 0 && x < SIZE && y >= 0 && y < SIZE && maze[x][y] == 1);
@@ -29,12 +29,12 @@ int solveMaze(int maze[SIZE][SIZE], int x, int y, int solution[SIZE][SIZE])
 
     if(isSafe(maze, x, y))
     {
-        solution[x][y] = 1; 
+        solution[x][y] = 1;
         if (solveMaze(maze, x+1, y, solution) || solveMaze(maze, x, y+1, solution))
             return 1;
         solution[x][y] = 0;//backtrack
         return 0;
-    }    
+    }
     return 0;
 }
 
@@ -53,7 +53,7 @@ int solveRatInMaze(int maze[SIZE][SIZE])
     printSolution(solution);
     return 1;
 }
- 
+
 int main()
 {
     int maze[SIZE][SIZE]  =  { {1, 1, 0, 0},
@@ -61,7 +61,7 @@ int main()
                                {0, 0, 1, 0},
                                {1, 1, 1, 1}
                              };
- 
+
     solveRatInMaze(maze);
     return 0;
 }
