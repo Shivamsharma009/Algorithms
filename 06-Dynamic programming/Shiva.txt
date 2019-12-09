@@ -1,0 +1,5 @@
+Best Method to Solve Fibonacci Series
+Another approach:(Using formula)
+In this method we directly implement the formula for nth term in the fibonacci series.
+Fn = {[(√5 + 1)/2] ^ n} / √5
+Reference: http://www.maths.surrey.ac.uk/hosted-sites/R.Knott/Fibonacci/fibFormula.html
